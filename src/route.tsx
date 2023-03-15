@@ -32,7 +32,6 @@ export const Routes = () => {
               ? iconsFocused[route.name]
               : iconsNoFocused[route.name];
 
-            // You can return any component that you like here!
             return <FeatherIcon name={iconName} size={size} color={color} />;
           },
           tabBarActiveTintColor: '#3f72af',
