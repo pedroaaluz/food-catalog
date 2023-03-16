@@ -7,7 +7,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {RootStackParamList} from './types/rootStackParamListType';
 import FeatherIcon from 'react-native-vector-icons/Feather';
-import type {} from '@react-navigation/native-stack';
 
 const Tab = createBottomTabNavigator<RootStackParamList>();
 // RouteProp<RootStackParamList, keyof RootStackParamList>
