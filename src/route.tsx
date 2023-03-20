@@ -1,15 +1,20 @@
 /* eslint-disable react/no-unstable-nested-components */
 import Catalog from './screens/catalog';
 import Favorites from './screens/favorites';
+import Description from './screens/description';
 
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {RootStackParamList} from './types/rootStackParamListType';
+import {TabParamsList, StackParamsList} from './types/rootStackParamListType';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
-const Tab = createBottomTabNavigator<RootStackParamList>();
 // RouteProp<RootStackParamList, keyof RootStackParamList>
+
+const Tab = createBottomTabNavigator<TabParamsList>();
+
+const Stack = createNativeStackNavigator<StackParamsList>();
 
 const iconsFocused = {
   Catalog: 'book-open',
@@ -42,6 +47,9 @@ export const Routes = () => {
         <Tab.Screen name="Catalog" component={Catalog} />
         <Tab.Screen name="Favorites" component={Favorites} />
       </Tab.Navigator>
+      <Stack.Navigator>
+        <Stack.Screen name="Description" component={Description} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 };

@@ -2,11 +2,11 @@ import React from 'react';
 import {View, Button, Text} from 'react-native';
 import {styles} from './styles';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
-import type {TabParamsList} from '../../types/rootStackParamListType';
+import type {StackParamsList} from '../../types/rootStackParamListType';
 
-const Favorites = ({
+const Description = ({
   navigation,
-}: NativeStackScreenProps<TabParamsList, 'Favorites'>): JSX.Element => (
+}: NativeStackScreenProps<StackParamsList, 'Description'>): JSX.Element => (
   <View style={styles.body}>
     <Text>Favorites</Text>
     <Button
@@ -16,4 +16,4 @@ const Favorites = ({
   </View>
 );
 
-export default Favorites;
+export default Description;
