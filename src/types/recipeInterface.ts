@@ -1,14 +1,16 @@
-type DescriptionType = {
+interface DescriptionInterface {
   description: string;
-};
+}
+
+interface IngredientInterface {
+  amount: string;
+  unit: string;
+  name: string;
+}
 
 interface IngredientGroupType {
   name: string;
-  ingredient: {
-    amount: string;
-    unit: string;
-    name: string;
-  }[];
+  ingredient: IngredientInterface[];
 }
 
 export interface RecipeInterface {
@@ -18,7 +20,7 @@ export interface RecipeInterface {
   description: string;
   tag?: string[];
   ingredient?: string[];
-  step: DescriptionType[];
+  step: DescriptionInterface[];
   forked: string;
   ingredientGroup: IngredientGroupType[];
 }
