@@ -6,11 +6,17 @@
  */
 
 import React from 'react';
-
+import {QueryClientProvider, QueryClient} from 'react-query';
 import {Routes} from './src/route';
 
+const reactQueryClient = new QueryClient();
+
 function App(): JSX.Element {
-  return <Routes />;
+  return (
+    <QueryClientProvider client={reactQueryClient}>
+      <Routes />
+    </QueryClientProvider>
+  );
 }
 
 export default App;
