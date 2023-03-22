@@ -7,47 +7,54 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
-import {TabParamsList, StackParamsList} from './types/rootStackParamListType';
+import {StackParamsList, TabParamsList} from './types/rootStackParamListType';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
+const Tab = createBottomTabNavigator<TabParamsList>();
 // RouteProp<RootStackParamList, keyof RootStackParamList>
 
-const Tab = createBottomTabNavigator<TabParamsList>();
+const TabsStack = () => {
+  const iconsFocused = {
+    Catalog: 'book-open',
+    Favorites: 'star',
+  };
+
+  const iconsNoFocused = {
+    Catalog: 'book',
+    Favorites: 'star',
+  };
+
+  return (
+    <Tab.Navigator
+      screenOptions={({route}) => ({
+        tabBarIcon: ({focused, color, size}) => {
+          const iconName = focused
+            ? iconsFocused[route.name]
+            : iconsNoFocused[route.name];
+
+          return <FeatherIcon name={iconName} size={size} color={color} />;
+        },
+        tabBarActiveTintColor: '#3f72af',
+        tabBarInactiveTintColor: 'gray',
+        headerShown: false,
+        tabBarAllowFontScaling: true,
+      })}>
+      {/* @ts-ignore i need read more about it*/}
+      <Tab.Screen name="Catalog" component={Catalog} />
+      <Tab.Screen name="Favorites" component={Favorites} />
+    </Tab.Navigator>
+  );
+};
 
 const Stack = createNativeStackNavigator<StackParamsList>();
-
-const iconsFocused = {
-  Catalog: 'book-open',
-  Favorites: 'star',
-};
-
-const iconsNoFocused = {
-  Catalog: 'book',
-  Favorites: 'star',
-};
 
 export const Routes = () => {
   return (
     <NavigationContainer>
-      <Tab.Navigator
-        screenOptions={({route}) => ({
-          tabBarIcon: ({focused, color, size}) => {
-            const iconName = focused
-              ? iconsFocused[route.name]
-              : iconsNoFocused[route.name];
-
-            return <FeatherIcon name={iconName} size={size} color={color} />;
-          },
-          tabBarActiveTintColor: '#3f72af',
-          tabBarInactiveTintColor: 'gray',
-          headerShown: false,
-          tabBarAllowFontScaling: true,
-          tabBarShowLabel: false,
-        })}>
-        <Tab.Screen name="Catalog" component={Catalog} />
-        <Tab.Screen name="Favorites" component={Favorites} />
-      </Tab.Navigator>
-      <Stack.Navigator>
+      <Stack.Navigator
+        initialRouteName="Tabs"
+        screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Tabs" component={TabsStack} />
         <Stack.Screen name="Description" component={Description} />
       </Stack.Navigator>
     </NavigationContainer>
