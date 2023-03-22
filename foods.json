@@ -77,7 +77,7 @@
 					]
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "In a large frying pan cook the cauliflower rice and the onion with butter and the concentrated chicken stock until the cauliflower rice starts drying a bit and the onion becomes translucent (if not using frozen cauliflower rice you may need to cook the onion before adding the cauliflower rice). Do not add butter to the pan first, you can just cook it all together."
 				},
@@ -154,7 +154,7 @@
 				}
 			],
 			"ingredientGroup": [],
-			"step": [
+			"steps": [
 				{
 					"description": "Saute the cauliflower rice with no (or very little) oil and stir frequently, until it dries up, making sure it doesn't stick.\n(Note that this picture only has half the amount of cauliflower rice the recipe needs)\n![The cauliflower rice, after it's cooked enough to dry](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/106742352_10158441296886192_2719018989199158785_n.jpg?_nc_cat=110&_nc_sid=07e735&_nc_ohc=LA0Z029Nqf4AX9O3xky&_nc_ht=scontent-lga3-1.xx&oh=e984cfd0263d9e0863a6249dbb4c39b5&oe=5F21DB46)"
 				},
@@ -238,7 +238,7 @@
 					"ingredient": []
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "Beat all ingredients together really well in a blender."
 				},
@@ -303,7 +303,7 @@
 					"ingredient": []
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "Beat the heavy cream with half of the icing sugar substitute (added slowly) until starting to get thick"
 				},
@@ -371,7 +371,7 @@
 				}
 			],
 			"ingredientGroup": [],
-			"step": [
+			"steps": [
 				{
 					"description": "Cut the bacon into lardons and sauté until it's lightly cooked."
 				},
@@ -498,7 +498,7 @@
 					]
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "In a blender or mini food processor, blend all the sauce ingredients, and chill in the fridge."
 				},
@@ -640,7 +640,7 @@
 					]
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "Cut the eggplants in half and scoop out the center. Leave about 1-1.5cm of flesh. Carve the flesh crosswise."
 				},
@@ -714,7 +714,7 @@
 					"name": "parsley"
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "In a large bowl, toss the shrimp with 1 teaspoon of kosher salt and let stand for 10 minutes. "
 				},
@@ -840,7 +840,7 @@
 					"name": "Freerange eggs"
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "Heat oil in a large, deep, preferably ceramic, frying pan on medium heat"
 				},
@@ -883,7 +883,7 @@
 			"description": "Low carb and delicious!",
 			"tag": [],
 			"ingredient": [],
-			"step": [
+			"steps": [
 				{
 					"description": "Mix two thirds of the grated mozzarella, the almond flour, and the nutritional yeast in a microwaveable bowl. Add the mascarpone. Microwave on HIGH for 1 minute."
 				},
@@ -1115,7 +1115,7 @@
 					"preparation": "to taste"
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "Cut each strip of bacon into 4mm [lardons](https://en.wikipedia.org/wiki/Lardon)."
 				},
@@ -1204,7 +1204,7 @@
 					"name": "balsamic reduction"
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "Chop most of the onion but set a little aside for garnish"
 				},
@@ -1221,7 +1221,7 @@
 					"description": "Put all in a tall blender glass and add the cream and remaining butter and blend until smooth"
 				},
 				{
-					"description": "Put aside in fridge for at least 4 hours and serve, garnishing with the balsamic reduction, parsley and the onion from step 1."
+					"description": "Put aside in fridge for at least 4 hours and serve, garnishing with the balsamic reduction, parsley and the onion from steps 1."
 				}
 			],
 			"forked": "Original recipe by Lea Dam Jensen"
@@ -1270,7 +1270,7 @@
 					"preparation": "pitted"
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "Wash the octopus, remove the eyes and beak, and separate the tentacles. Cut each tentacle in 2-3 pieces of roughly equal volume, same for the head."
 				},
@@ -1350,7 +1350,7 @@
 					"preparation": "sliced"
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "In a small saucepan over medium-high heat, combine the soy sauce, erythritol, ginger, garlic, mirin and sesame oil. Bring to a simmer, stirring until the erythritol has dissolved, about 1 minute. Let cool to room temperature. Reserve 1/4 cup (2 fl. oz./60 ml) of the sauce."
 				},
@@ -1442,7 +1442,7 @@
 					"name": "pepper"
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "Add a lot of salt to the grated zucchini and squeeze well with a towel or cheesecloth to remove moisture."
 				},
@@ -1470,7 +1470,7 @@
 				"Dessert"
 			],
 			"ingredient": [],
-			"step": [
+			"steps": [
 				{
 					"description": "**Base:** \n1. In a medium frying pan, melt the ghee under low heat. \n2. Add the almond and coconut flour and stir continuously. \n3. It will look very runny at first, that's normal. When it starts darkening and becoming more viscous, add the cinnamon and sweetener. \n4. When it's light brown and most of the the ghee has been absorbed, it's about done. At that point, add the vanilla extract. It will foam, that's ok. Stir until it goes down again.\n5. Press into a 9\" springform cake tray. Let it cool down in the fridge."
 				},
@@ -1637,7 +1637,7 @@
 					"name": "ground chipotle"
 				}
 			],
-			"step": [
+			"steps": [
 				{
 					"description": "**Curry paste**: In a mini blender or food processor, blend chiles and salt until pulverized. Add lemongrasss, ginger, galangal, turmeric, chopped shallots, garlic, shrimp paste one by one in order listed, fully pulverizing each before adding the next."
 				},
