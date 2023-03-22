@@ -19,8 +19,8 @@ export interface RecipeInterface {
   id: string;
   description: string;
   tag?: string[];
-  ingredient?: string[];
-  step: DescriptionInterface[];
+  ingredient?: IngredientGroupType[];
+  steps: DescriptionInterface[];
   forked: string;
-  ingredientGroup: IngredientGroupType[];
+  ingredientGroup?: IngredientGroupType[];
 }
