@@ -14,13 +14,23 @@ import FeatherIcon from 'react-native-vector-icons/Feather';
 import {useQuery} from 'react-query';
 import {recipes} from '../../utils/recipes';
 import {Loading} from '../../components/loading';
+import type {StackParamsList} from '../../types/rootStackParamListType';
+import type {RecipeInterface} from '../../types/recipeInterface';
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 
-const Catalog = (): JSX.Element => {
+const Catalog = ({
+  navigation,
+}: NativeStackScreenProps<StackParamsList, 'Description'>): JSX.Element => {
   const {data, isLoading} = useQuery('list-recipes', recipes.get);
 
-  const renderItem = ({item}: ListRenderItemInfo<any>) => {
+  const renderItem = ({item}: ListRenderItemInfo<RecipeInterface>) => {
     return (
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('Description', {
+            ...item,
+          });
+        }}>
         <View style={styles.cardBody}>
           <Image source={{uri: item.image}} style={styles.cardImage} />
           <View style={styles.cardBodyText}>
