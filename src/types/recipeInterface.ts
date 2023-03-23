@@ -1,8 +1,8 @@
-interface DescriptionInterface {
+export interface DescriptionInterface {
   description: string;
 }
 
-interface IngredientInterface {
+export interface IngredientInterface {
   amount: string;
   unit: string;
   name: string;
@@ -19,7 +19,7 @@ export interface RecipeInterface {
   id: string;
   description: string;
   tag?: string[];
-  ingredient?: IngredientGroupType[];
+  ingredients?: IngredientInterface[];
   steps: DescriptionInterface[];
   forked: string;
   ingredientGroup?: IngredientGroupType[];
