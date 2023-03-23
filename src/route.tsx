@@ -34,7 +34,7 @@ const TabsStack = () => {
 
           return <FeatherIcon name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: '#3f72af',
+        tabBarActiveTintColor: '#11999e',
         tabBarInactiveTintColor: 'gray',
         headerShown: false,
         tabBarAllowFontScaling: true,

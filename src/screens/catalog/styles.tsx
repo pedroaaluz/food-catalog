@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
   inputTextView: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#364f6b',
+    backgroundColor: '#11999e',
     padding: 10,
   },
   inputText: {
