@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   View,
   Text,
@@ -12,7 +12,7 @@ import {FlatList} from 'react-native-gesture-handler';
 import FeatherIcon from 'react-native-vector-icons/Feather';
 
 import {useQuery} from 'react-query';
-import {recipes} from '../../utils/recipes';
+import {recipesHttp} from '../../utils/recipes';
 import {Loading} from '../../components/loading';
 import type {StackParamsList} from '../../types/rootStackParamListType';
 import type {RecipeInterface} from '../../types/recipeInterface';
@@ -21,7 +21,8 @@ import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 const Catalog = ({
   navigation,
 }: NativeStackScreenProps<StackParamsList, 'Description'>): JSX.Element => {
-  const {data, isLoading} = useQuery('list-recipes', recipes.get);
+  const {data, isLoading} = useQuery('list-recipes', recipesHttp.get);
+  const [filter, setFilter] = useState('');
 
   const renderItem = ({item}: ListRenderItemInfo<RecipeInterface>) => {
     return (
@@ -41,12 +42,13 @@ const Catalog = ({
     );
   };
 
+
   return (
     <View style={styles.body}>
       <View>
         <View style={styles.inputTextView}>
           <FeatherIcon name={'search'} size={20} color={'#fff'} />
-          <TextInput style={styles.inputText} />
+          <TextInput style={styles.inputText} onChangeText={(text) => setFilter(text)} />
         </View>
       </View>
       {isLoading ? (
@@ -56,7 +58,7 @@ const Catalog = ({
           keyExtractor={item => item.id}
           style={styles.flatList}
           renderItem={renderItem}
-          data={data}
+          data={data.filter((r: RecipeInterface) => (r.name.includes(filter)))}
         />
       )}
     </View>
