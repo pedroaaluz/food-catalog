@@ -58,7 +58,7 @@ const Catalog = ({
           keyExtractor={item => item.id}
           style={styles.flatList}
           renderItem={renderItem}
-          data={data.filter((r: RecipeInterface) => (r.name.includes(filter)))}
+          data={data.filter((r: RecipeInterface) => (r.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase())))}
         />
       )}
     </View>
