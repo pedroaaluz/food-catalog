@@ -28,7 +28,7 @@ const TabsStack = () => {
     <Tab.Navigator
       screenOptions={({route}) => ({
         tabBarIcon: ({focused, color, size}) => {
-          const iconName = focused
+          const iconName: string = focused
             ? iconsFocused[route.name]
             : iconsNoFocused[route.name];
 

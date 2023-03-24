@@ -4,6 +4,11 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  buttonPosition: {
+    position: 'absolute',
+    top: 20,
+    right: 20,
+  },
   imageHeaderContainer: {
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     flex: 1,

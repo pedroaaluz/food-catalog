@@ -1,16 +1,21 @@
-import React from 'react';
-import {View, Text, ImageBackground} from 'react-native';
+import React, {useState} from 'react';
+import {View, Text, ImageBackground, TouchableOpacity} from 'react-native';
 import {styles} from './styles';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import type {StackParamsList} from '../../types/rootStackParamListType';
 import {ScrollView} from 'react-native-gesture-handler';
 import {IngredientCheck} from '../../components/ingredientCheck';
 import {StepRecipe} from '../../components/stepRecipe';
+import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 
 const Description = ({
   route,
 }: NativeStackScreenProps<StackParamsList, 'Description'>): JSX.Element => {
   const {image, name, ingredients, steps} = route.params;
+  const [isFavorite, setIsFavorite] = useState<boolean>(false);
+
+  const color = isFavorite ? '#f9ed69' : '#fff';
+  const iconName = isFavorite ? 'star' : 'star-o';
 
   return (
     <ScrollView>
@@ -18,6 +23,12 @@ const Description = ({
         <ImageBackground source={{uri: image}} style={{height: 300}}>
           <View style={styles.imageHeaderContainer}>
             <Text style={styles.imageHeaderText}>{name}</Text>
+
+            <TouchableOpacity
+              style={styles.buttonPosition}
+              onPress={() => setIsFavorite(!isFavorite)}>
+              <FontAwesomeIcon name={iconName} size={22} color={color} />
+            </TouchableOpacity>
           </View>
         </ImageBackground>
       </View>
