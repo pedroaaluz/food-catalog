@@ -14,6 +14,7 @@ interface IngredientGroupType {
 }
 
 export interface RecipeInterface {
+  favorites: boolean;
   image: string;
   name: string;
   id: string;
