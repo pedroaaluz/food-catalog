@@ -2,8 +2,8 @@
 
 Este app mostra um livro de receitas em uma API mockada com JSON server.
 
-<video src="demo.webm" controls>
-</video>
+<image src="demo.gif" controls>
+</image>
 
 # Pré-requisito
 

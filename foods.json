@@ -2,7 +2,7 @@
   "recipes": [
     {
       "name": "Spanakorizo",
-      "favorites": false,
+      "favorites": true,
       "id": "spanakorizo",
       "description": "A low carb twist on the Greek classic, using cauliflower rice",
       "tag": [
@@ -98,7 +98,7 @@
     },
     {
       "name": "Giouvarlakia",
-      "favorites": true,
+      "favorites": false,
       "id": "giouvarlakia",
       "description": "A low carb version of a traditional hearty Greek dish",
       "tag": [
