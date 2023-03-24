@@ -29,7 +29,7 @@ Troque o valor de `{seu endereço IP}` para o seu IP. Feita essa troca, basta in
 npm run start -- --host {seu endereço IP}
 ```
 
-### Depedencias
+### Dependências
 
 É necessário rodar o comando abaixo após baixar o repositório:
 
