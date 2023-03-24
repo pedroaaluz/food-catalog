@@ -13,8 +13,23 @@ const getRecipes = async () => {
   return data;
 };
 
-export const recipes = {
+const getRecipesFavorites= async () => {
+  const {data} = await axios.get(url, {
+    headers: {
+      Accept: 'application/json',
+      'content-Type': 'application/json',
+    },
+    params:{
+      favorites: true
+    }
+  });
+
+  return data;
+};
+
+export const recipesHttp = {
   get: getRecipes,
+  getFavorites: getRecipesFavorites,
   update: {},
   delete: {},
   post: {},

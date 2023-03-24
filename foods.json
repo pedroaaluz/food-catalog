@@ -2,6 +2,7 @@
 	"recipes": [
 		{
 			"name": "Spanakorizo",
+			"favorites": false,
 			"id": "spanakorizo",
 			"description": "A low carb twist on the Greek classic, using cauliflower rice",
 			"tag": [
@@ -97,6 +98,7 @@
 		},
 		{
 			"name": "Giouvarlakia",
+			"favorites": false,
 			"id": "giouvarlakia",
 			"description": "A low carb version of a traditional hearty Greek dish",
 			"tag": [
@@ -188,6 +190,7 @@
 		},
 		{
 			"name": "Tal’s Tahini “bread pudding”",
+			"favorites": false,
 			"id": "tahini-bread-pudding",
 			"description": "A delicious baked dessert that takes 5 minutes to make!",
 			"tag": [
@@ -257,6 +260,7 @@
 		},
 		{
 			"name": "Grand Marnier & Coffee Ice Cream",
+			"favorites": false,
 			"id": "grand-marnier-coffee-ice-cream",
 			"description": "Easy and decadent!",
 			"tag": [
@@ -327,6 +331,7 @@
 		{
 			"image": "http://forkgasm.com/images/carbonara.jpg",
 			"name": "Turnip Noodle Carbonara",
+			"favorites": false,
 			"id": "turnip-carbonara",
 			"description": "A healthier version of the classic dish that tastes just as good!",
 			"tag": [
@@ -397,6 +402,7 @@
 		{
 			"image": "http://forkgasm.com/images/40813912_2213541505597183_7740637805202109577_n.jpg",
 			"name": "Spiced lamb chops with mint-mango sauce",
+			"favorites": false,
 			"id": "spiced-lamb-chops-with-mint-mango-sauce",
 			"description": "Delicious, refreshing, and super quick to make!",
 			"tag": [
@@ -520,6 +526,7 @@
 		},
 		{
 			"name": "Papoutsakia",
+			"favorites": false,
 			"id": "papoutsakia",
 			"description": "A traditional Greek dish that tastes very similar to moussaka, but is much quicker to cook. Fun fact: Papoutsakia in Greek means \"little shoes\" and a portion usually has two. However, when cooking with large American eggplants, you'll likely find that one per portion is enough.",
 			"tag": [
@@ -666,6 +673,7 @@
 		{
 			"image": "http://forkgasm.com/images/gambas.png",
 			"name": "Gambas al Ajillo",
+			"favorites": false,
 			"id": "gambas-al-ajillo",
 			"description": "Quick and garlicky!",
 			"tag": [
@@ -736,6 +744,7 @@
 		},
 		{
 			"name": "Shakshuka",
+			"favorites": false,
 			"id": "shakshuka",
 			"description": "Breakfast of champions (one of them)",
 			"tag": [
@@ -879,6 +888,7 @@
 		{
 			"image": "http://forkgasm.com/images/fathead-pineapple.jpg",
 			"name": "Fathead Pineapple Pizza",
+			"favorites": false,
 			"id": "fathead-pineapple-pizza",
 			"description": "Low carb and delicious!",
 			"tag": [],
@@ -1165,6 +1175,7 @@
 		{
 			"image": "http://forkgasm.com/images/mushrooms.jpg",
 			"name": "Garlic mushrooms a la crème",
+			"favorites": false,
 			"id": "garlic-mushrooms-a-la-creme",
 			"description": "Not the most photogenic dish, but really easy, quick and delicious!",
 			"tag": [],
@@ -1269,6 +1280,7 @@
 		{
 			"image": "http://forkgasm.com/images/chicken-liver-pate.jpg",
 			"name": "Chicken Liver Pâté",
+			"favorites": false,
 			"id": "chicken-liver-pate",
 			"description": "Rich and creamy, delicious on bread or even on its own",
 			"tag": [
@@ -1343,6 +1355,7 @@
 		{
 			"image": "http://forkgasm.com/images/htapodi-krasato.jpg",
 			"name": "Octopus in Wine",
+			"favorites": false,
 			"id": "octopus-in-wine",
 			"description": "A traditional Greek dish (Htapodi Krasato).",
 			"tag": [
@@ -1411,6 +1424,7 @@
 		{
 			"image": "http://forkgasm.com/images/salmon-sous-vide.jpg",
 			"name": "Sous Vide Salmon Teriyaki",
+			"favorites": false,
 			"id": "salmon-teriyaki",
 			"description": "Tender, refreshing and very easy to make",
 			"tag": [
@@ -1494,6 +1508,7 @@
 			"tag": [
 				"Greek"
 			],
+			"favorites": false,
 			"id": "sfouggato",
 			"ingredients": [
 				{
@@ -1669,6 +1684,7 @@
 				}
 			],
 			"notes": "- We use Sukrin Gold and Sukrin Icing for sweetening. We've tried many and think those are as close as it gets to the sugar equivalents and have no aftertaste.\n- You can use less mascarpone, the middle layer will just be less thick. Adjust the rest of the quantities accordingly in that case.",
+			"favorites": false,
 			"id": "cheesecake",
 			"ingredientGroup": [
 				{
@@ -1839,6 +1855,7 @@
 				}
 			],
 			"forked": "[Curried Beef Stew](https://www.epicurious.com/recipes/food/views/curried-beef-stew-380591)",
+			"favorites": false,
 			"id": "curried-beef-stew",
 			"ingredientGroup": [
 				{
