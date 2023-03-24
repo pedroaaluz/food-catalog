@@ -7,12 +7,20 @@ import {ScrollView} from 'react-native-gesture-handler';
 import {IngredientCheck} from '../../components/ingredientCheck';
 import {StepRecipe} from '../../components/stepRecipe';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
+import {recipesHttp} from '../../utils/recipes';
+import {useMutation, useQueryClient} from 'react-query';
 
 const Description = ({
   route,
 }: NativeStackScreenProps<StackParamsList, 'Description'>): JSX.Element => {
-  const {image, name, ingredients, steps} = route.params;
+  const {image, name, ingredients, steps, id} = route.params;
   const [isFavorite, setIsFavorite] = useState<boolean>(false);
+
+  const queryClient = useQueryClient();
+
+  const {mutate} = useMutation(() => recipesHttp.update(!isFavorite, id), {
+    onSuccess: () => queryClient.invalidateQueries('list-recipes-favorites'),
+  });
 
   const color = isFavorite ? '#f9ed69' : '#fff';
   const iconName = isFavorite ? 'star' : 'star-o';
@@ -26,7 +34,10 @@ const Description = ({
 
             <TouchableOpacity
               style={styles.buttonPosition}
-              onPress={() => setIsFavorite(!isFavorite)}>
+              onPress={() => {
+                setIsFavorite(!isFavorite);
+                mutate();
+              }}>
               <FontAwesomeIcon name={iconName} size={22} color={color} />
             </TouchableOpacity>
           </View>

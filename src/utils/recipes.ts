@@ -13,15 +13,23 @@ const getRecipes = async () => {
   return data;
 };
 
-const getRecipesFavorites= async () => {
+const getRecipesFavorites = async () => {
   const {data} = await axios.get(url, {
     headers: {
       Accept: 'application/json',
       'content-Type': 'application/json',
     },
-    params:{
-      favorites: true
-    }
+    params: {
+      favorites: true,
+    },
+  });
+
+  return data;
+};
+
+const updateRecipes = async (favorites: boolean, id: string) => {
+  const {data} = await axios.patch(`${url}/${id}`, {
+    favorites,
   });
 
   return data;
@@ -30,7 +38,7 @@ const getRecipesFavorites= async () => {
 export const recipesHttp = {
   get: getRecipes,
   getFavorites: getRecipesFavorites,
-  update: {},
+  update: updateRecipes,
   delete: {},
   post: {},
 };
