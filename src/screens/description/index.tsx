@@ -14,15 +14,16 @@ const Description = ({
   route,
 }: NativeStackScreenProps<StackParamsList, 'Description'>): JSX.Element => {
   const {image, name, ingredients, steps, id, favorites} = route.params;
+  const [isFavorite, setIsFavorite] = useState<boolean>(favorites);
 
   const queryClient = useQueryClient();
 
-  const {mutate} = useMutation(() => recipesHttp.update(!favorites, id), {
+  const {mutate} = useMutation(() => recipesHttp.update(!isFavorite, id), {
     onSuccess: () => queryClient.invalidateQueries('list-recipes-favorites'),
   });
 
-  const color = favorites ? '#f9ed69' : '#fff';
-  const iconName = favorites ? 'star' : 'star-o';
+  const color = isFavorite ? '#f9ed69' : '#fff';
+  const iconName = isFavorite ? 'star' : 'star-o';
 
   return (
     <ScrollView>
@@ -34,6 +35,7 @@ const Description = ({
             <TouchableOpacity
               style={styles.buttonPosition}
               onPress={() => {
+                setIsFavorite(!isFavorite);
                 mutate();
               }}>
               <FontAwesomeIcon name={iconName} size={22} color={color} />
