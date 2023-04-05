@@ -41,6 +41,7 @@ const TabsStack = () => {
       })}>
       {/* @ts-ignore i need read more about it*/}
       <Tab.Screen name="Catalog" component={Catalog} />
+      {/* @ts-ignore i need read more about it*/}
       <Tab.Screen name="Favorites" component={Favorites} />
     </Tab.Navigator>
   );
